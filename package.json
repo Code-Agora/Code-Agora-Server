@@ -1,0 +1,15 @@
+{
+  "name": "Code_Agora_Server",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "nodemon App.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "~4.16.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
