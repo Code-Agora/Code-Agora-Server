@@ -9,7 +9,7 @@ router.get("/", (req, res) => {
 
 router.get("/about", (req, res) => {
 	res.json({
-		message: "This route will eventually celebrate who we are and what we do"
+		message: "This route will eventually celebrate who we are and what we do."
 	});
 });
 
