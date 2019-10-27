@@ -5,8 +5,8 @@ exports.up = function(knex, Promise) {
         table.float('rating');
         table.integer('user_id');
         table.integer('question_id');
-        table.foreign('user_id').references('_User.id');
-        table.foreign('question_id').references('Question.id');
+        table.foreign('user_id').references('_User.id').onDelete('CASCADE');
+        table.foreign('question_id').references('Question.id').onDelete('CASCADE');
         table.boolean('isBest').defaultTo(false);
 	});
 };
