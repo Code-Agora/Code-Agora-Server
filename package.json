@@ -8,6 +8,8 @@
   "dependencies": {
     "cors": "^2.8.5",
     "express": "~4.16.1",
+    "knex": "^0.20.1",
+    "pg": "^7.12.1",
     "swagger-ui-express": "^4.1.2"
   },
   "devDependencies": {
