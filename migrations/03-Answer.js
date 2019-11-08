@@ -8,6 +8,7 @@ exports.up = function(knex, Promise) {
         table.foreign('user_id').references('_User.id').onDelete('CASCADE');
         table.foreign('question_id').references('Question.id').onDelete('CASCADE');
         table.boolean('isBest').defaultTo(false);
+        table.text('body').notNullable();
 	});
 };
 
