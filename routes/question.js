@@ -12,9 +12,12 @@ router.get("/questions", (req, res) => {
 });
 
 router.get("/question/:id", (req, res) => {
-	res.json({
-		foo: "bar"
-	});
+	knex('Question').select().where('id', Number(req.params.id)).then((question) => {
+		res.json({
+			data: question
+		});
+	}
+	);
 });
 
 module.exports = router;
