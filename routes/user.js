@@ -16,14 +16,18 @@ router.get("/users", (req, res) => {
 
 //Select Single User
 router.get("/user/:id", (req, res) => {
-	knex.select().from('_User').where('id', Number(req.params.id)).then((user) => {
+	knex.select().from('_User').where('id', req.params.id)
+	.then((user) => {
+		res.status(200);
 		res.json({user});
 	});
 });
 
 //Select all questions by specifed user
 router.get("/user/:id/questions", (req, res) => {
-	knex.select().from('Question').where('user_id', Number(req.params.id)).then((questions) => {
+	knex.select().from('Question').where('user_id', req.params.id)
+	.then((questions) => {
+		res.status(200);
 		res.json({questions});
 	});
 });
