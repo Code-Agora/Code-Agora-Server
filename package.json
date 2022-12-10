@@ -7,7 +7,7 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "~4.16.1",
+    "express": "~4.17.3",
     "knex": "^0.20.1",
     "knex-paginator": "^2.0.0",
     "pg": "^7.12.1",
